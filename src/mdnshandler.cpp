@@ -1,7 +1,7 @@
 #include "mdnshandler.h"
 
-uint16_t httpPort = _HTTPPORT;
-bool mdnsRunning = false;
+static uint16_t httpPort = _HTTPPORT;
+static bool mdnsRunning = false;
 
 bool mdnsSetup()
 {

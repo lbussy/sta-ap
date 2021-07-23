@@ -12,6 +12,7 @@
 #include <LittleFS.h>
 #endif
 
+#include "secret.h"
 #include "setserial.h"
 
 // Webserver Stuff

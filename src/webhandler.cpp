@@ -1,9 +1,7 @@
 #include "webhandler.h"
 
-#define PORT 80
-#define LED LED_BUILTIN
-#define APBLINK 0.3
-#define STABLINK 1.0
+static uint16_t httpPort = _HTTPPORT;
+
 
 #ifdef ESP32
 #define FILESYSTEM SPIFFS
@@ -11,7 +9,7 @@
 #define FILESYSTEM LittleFS
 #endif
 
-AsyncWebServer webServer(PORT);
+AsyncWebServer webServer(httpPort);
 
 static bool webRunning = false;
 
