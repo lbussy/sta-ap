@@ -43,7 +43,7 @@ void mdnsLoop()
 #endif
 }
 
-bool mdnsmdnsRunning()
+bool mdnsIsRunning()
 {
     return mdnsRunning;
 }
